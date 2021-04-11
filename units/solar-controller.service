@@ -1,0 +1,9 @@
+[Unit]
+Description=Start up the controller.
+After=network-online.target
+
+[Service]
+ExecStart=/home/eriq/code/solar-controller/scripts/startup.sh
+
+[Install]
+WantedBy=default.target
